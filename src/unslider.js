@@ -145,7 +145,7 @@
 				//  Handle those pesky dots
 				var dots;
 				if(o.dots.constructor=={}.constructor){
-					dots = $(o.dots).find('.dots');
+					dots = $(o.dots).find('.dots > .dot');
 				}else{
 					dots = el.find('.dot');
 				}
