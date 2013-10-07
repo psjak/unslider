@@ -111,11 +111,11 @@
 			};
 
 			//  Swipe support
-			if ($.event.special['swipe'] || $.Event('swipe')) {
+			/*if ($.event.special['swipe'] || $.Event('swipe')) {
 				el.on('swipeleft swiperight swipeLeft swipeRight', function(e) {
 					e.type.toLowerCase() == 'swipeleft' ? _.next() : _.prev();
 				});
-			};
+			};*/
 
 			return _;
 		};
@@ -144,7 +144,7 @@
 			if (!ul.queue('fx').length) {
 				//  Handle those pesky dots
 				var dots;
-				if(o.dots.constructor=={}.constructor){
+				if(o.dots.constructor==el.constructor){
 					dots = $(o.dots).find('.dots > .dot');
 				}else{
 					dots = el.find('.dot');
