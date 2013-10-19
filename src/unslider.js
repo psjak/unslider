@@ -13,10 +13,10 @@
 			delay: 3000,    // delay between slides, false for no autoplay (integer or boolean)
 			init: 0,        // init delay, false for no delay (integer or boolean)
 			pause: !f,      // pause on hover (boolean)
-			loop: !f,       // infinitely looping (boolean)
+			loop: !t,       // infinitely looping (boolean)
 			keys: f,        // keyboard shortcuts (boolean)
-			dots: false,        // display ••••o• pagination (boolean|handle to the dots)
-			arrows: f,      // display prev/next arrows (boolean)
+			dots: true,        // display ••••o• pagination (boolean|handle to the dots)
+			arrows: t,      // display prev/next arrows (boolean)
 			prev: '←',      // text or html inside prev button (string)
 			next: '→',      // same as for prev option
 			fluid: f,       // is it a percentage width? (boolean)
